@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+.Navbar {
+  background-color: #94618E;
+  color:#F8EEE7;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  padding-top: 10px;
+}
+
+.Navbar__title {
+  font-family: 'Coiny', cursive;
+  font-size: 30px;
+}
