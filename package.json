@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "react": "^16.8.1",
+    "react-cursor-position": "^3.0.3",
     "react-dom": "^16.8.1",
     "react-icons": "^3.4.0",
     "react-scripts": "2.1.3"
