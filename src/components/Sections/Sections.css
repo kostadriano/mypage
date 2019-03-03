@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+.SectionsLinks {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.SectionLink {
+  font-family: 'Archivo Black', sans-serif;
+  color: #94618E;
+  cursor: pointer;
+  font-size: 40px;
+  padding: 6px;
+  border-radius: 20px;
+  border-bottom-right-radius: 4px;
+}
+
+.SectionLink:hover{
+  color: #600473;
+}

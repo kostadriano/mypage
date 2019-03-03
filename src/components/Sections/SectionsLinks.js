@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SectionsLinks = ({ onFollow, sections, getSectionTitle }) =>
-  <div>
+  <div className="SectionsLinks">
     {
       sections.map(section =>
         <SectionLink
@@ -14,7 +14,7 @@ const SectionsLinks = ({ onFollow, sections, getSectionTitle }) =>
   </div>
 
 const SectionLink = ({ onFollow, section }) =>
-  <span onClick={onFollow}>
+  <span className="SectionLink" onClick={onFollow}>
     {section}
   </span>
 
