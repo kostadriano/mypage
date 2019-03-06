@@ -1,8 +1,13 @@
 import React from 'react';
 
-const Section = ({ children }) =>
+const Section = ({ children, title }) =>
   <div className="Section">
-    {children}
+    <div className="Section__title">
+      {title}
+    </div>
+    <div className="Section__content">
+      {children}
+    </div>
   </div>
 
 export default Section;

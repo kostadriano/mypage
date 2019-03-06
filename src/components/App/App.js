@@ -4,6 +4,7 @@ import NavbarIcons from '../Navbar/NavbarIcons';
 import Content from '../Content';
 import Sections from '../Sections';
 import * as Section from '../../models/section';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -29,14 +30,16 @@ class App extends Component {
             sections={Section.getAllSections()}
             getSectionTitle={Section.getSectionTitle}
           />
-          <Sections.List >
+          <Sections.List>
             {
               Section.getAllSections().map(section =>
-                <Sections.Section key={section}>
-                  <div ref={section}>
+                <div ref={section} key={section}>
+                  <Sections.Section
+                    title={Section.getSectionTitle(section)}
+                  >
                     {Section.getSectionText(section)}
-                  </div>
-                </Sections.Section>
+                  </Sections.Section>
+                </div>
               )
             }
           </Sections.List>
