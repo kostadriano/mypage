@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Rubik');
+
+.SectionsLinks {
+  display: flex;
+  width: 80%;
+  min-width: 760px;
+  justify-content: space-between;
+}
+
+.SectionLink {
+  font-family: 'Archivo Black', sans-serif;
+  color: #94618E;
+  cursor: pointer;
+  font-size: 35px;
+  padding: 6px;
+}
+
+.SectionLink:hover{
+  color: #600473;
+}
+
+.Section {
+  padding: 20px 100px;
+}
+
+.Section__title {
+  color: #94618E;
+  font-size: 35px;
+  padding: 10px 40px;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.Section__content {
+  font-size: 30px;
+  color: #31004a;
+  padding: 10px 40px;
+  text-align: justify;
+  font-family: 'Rubik', sans-serif;
+}
