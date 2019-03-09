@@ -26,13 +26,14 @@ class App extends Component {
         </Navbar>
 
         <Content>
-          <Sections.Links
-            onFollow={this.handleFollowToSection}
-            sections={Section.getAllSections()}
-            getSectionTitle={Section.getSectionTitle}
-          />
 
-          <Face />
+          <Face >
+            <Sections.Links
+              onFollow={this.handleFollowToSection}
+              sections={Section.getAllSections()}
+              getSectionTitle={Section.getSectionTitle}
+            />
+          </Face>
 
           <Sections.List>
             {

@@ -3,18 +3,20 @@ import ReactCursorPosition from 'react-cursor-position';
 import Eye from './Eye.js';
 import './Face.css';
 
-const Face = () =>
+const Face = ({ children }) =>
   <ReactCursorPosition className="Face">
+    {children}
+
     <Eye
-      leftDistance={75}
-      topDistance={50}
+      leftDistance={400}
+      topDistance={150}
       width={90}
       height={50}
     />
 
     <Eye
-      leftDistance={325}
-      topDistance={50}
+      leftDistance={700}
+      topDistance={150}
       width={90}
       height={50}
     />
