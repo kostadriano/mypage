@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../Navbar/Navbar';
 import NavbarIcons from '../Navbar/NavbarIcons';
 import Content from '../Content';
+import Face from '../Face';
 import Sections from '../Sections';
 import * as Section from '../../models/section';
 import './App.css';
@@ -19,17 +20,21 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App"  >
         <Navbar>
           <NavbarIcons />
         </Navbar>
 
         <Content>
-          <Sections.Links
-            onFollow={this.handleFollowToSection}
-            sections={Section.getAllSections()}
-            getSectionTitle={Section.getSectionTitle}
-          />
+
+          <Face >
+            <Sections.Links
+              onFollow={this.handleFollowToSection}
+              sections={Section.getAllSections()}
+              getSectionTitle={Section.getSectionTitle}
+            />
+          </Face>
+
           <Sections.List>
             {
               Section.getAllSections().map(section =>

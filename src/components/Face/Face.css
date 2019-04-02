@@ -1,0 +1,20 @@
+.Face {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  height: 300px;
+  width: 100%;
+}
+
+.Eye {
+  position: absolute;
+  border: 2px solid black;
+}
+
+.Pupil {
+  position: absolute;
+  background-color: black;
+  border-radius: 5px;
+}
